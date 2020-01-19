@@ -1,0 +1,4 @@
+{
+    "mongoURI": "mongodb+srv://Achraf:arshavin23@cluster0-fomtt.mongodb.net/test?retryWrites=true&w=majority",
+    "jwtSecret": "ks_mYJwtsecret"
+}

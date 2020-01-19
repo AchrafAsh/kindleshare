@@ -1,0 +1,96 @@
+.scrolling-wrapper {
+  height: 200px;
+  overflow-x: auto;
+  overflow-y: scroll;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.book-card {
+  display: flex;
+  justify-content: right;
+}
+
+.book-delete-btn {
+  padding: 0px;
+  margin: 0px;
+  height: 15px;
+  width: 15px;
+  line-height: 0px;
+  position: relative;
+  left: 80%;
+  bottom: 100%;
+}
+
+.drop-down-menu {
+  width: 100%;
+  max-height: 300px;
+  overflow: auto;
+}
+
+.profile-image {
+  height: 200px;
+  border-radius: 50%;
+  margin: 0px 20px 40px 0px;
+}
+
+.follow-btn {
+  margin: 10px;
+}
+
+/* For the highlight */
+.highlight {
+  font-size: 1rem;
+}
+
+blockquote {
+  font-size: 0.8rem;
+  text-align: justify;
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 0.5em 10px;
+  padding: 0 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+  padding: 10px 20px;
+  line-height: 1.4;
+}
+
+blockquote:before {
+  content: open-quote;
+  display: inline;
+  line-height: 0;
+  left: -10px;
+  position: relative;
+  top: 10px;
+  color: #ccc;
+  font-size: 2em;
+}
+
+p {
+  margin: 0;
+}
+
+.comment {
+  font-size: 1.1rem;
+  text-indent: 1em;
+}
+
+.footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
+}
+
+.footer-msg {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  display: flex;
+  justify-content: center;
+  font-style: normal;
+  align-items: flex-end;
+  font-size: 1rem;
+  color: #ccc;
+  text-align: center;
+}
