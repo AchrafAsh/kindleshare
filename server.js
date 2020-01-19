@@ -30,7 +30,7 @@ app.use('/auth', auth);
 app.use('/posts', posts);
 
 // Serve static assets if in production
-if(process.env.NODE_ENV == 'prooduction') {
+if(process.env.NODE_ENV === 'production') {
     // Set static folder
     app.use(express.static('client/build'));
 
