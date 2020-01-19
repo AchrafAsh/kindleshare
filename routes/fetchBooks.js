@@ -1,13 +1,16 @@
 const puppeteer = require('puppeteer');
 
 module.exports = async (req, res) => {
-    const browser = await puppeteer.launch({ headless: false });
+    const browser = await puppeteer.launch({ 
+        args: ['--no-sandbox'],
+        headless: false 
+    });
     const page = await browser.newPage();
     await page.goto("https://read.amazon.com/notebook");
 
-    await page.type('#ap_email', 'aitsidihammou.achraf@gmail.com')
-    await page.type('#ap_password', '21140houda')
-    await page.keyboard.press('Enter')
+    // await page.type('#ap_email', 'aitsidihammou.achraf@gmail.com')
+    // await page.type('#ap_password', '21140houda')
+    // await page.keyboard.press('Enter')
     await page.waitForNavigation({ waitUntil: 'load' })
 
     // get list of books
