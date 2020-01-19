@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const fetchBooks = require('./fetchBooks');
+// const fetchBooks = require('./fetchBooks');
 const Book = require('../models/Book');
 const auth = require('../middleware/auth');
 
@@ -46,7 +46,7 @@ router.delete('/:id', auth, (req, res) => {
 // @desc    Fetch books from kindle
 // @access  Private
 router.get('/kindle', (req, res) => {
-    fetchBooks(req, res);
+    // fetchBooks(req, res);
 });
 
 module.exports = router;
