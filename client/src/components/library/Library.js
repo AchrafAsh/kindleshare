@@ -20,7 +20,8 @@ class Library extends Component {
     }
 
     onClick = () => {
-        this.props.fetchBooks();
+        // this.props.fetchBooks();
+        alert("This feature isn't available yet")
     }
 
     render() {
@@ -28,7 +29,7 @@ class Library extends Component {
         const { books } = this.props.books;
         return (
             <Container>
-                <Button color="warning" onClick={this.onClick}>Get my highlights</Button>
+                <Button color="warning" onClick={this.onClick}>Sync highlights</Button>
                 <br />
                 <br />
                 {books.length > 0 ? <BookList deleteBook={this.props.deleteBook} books={ books }/> : null}
