@@ -26,7 +26,8 @@ So the main feature, which is retrieving your Kindle highlights, doesn't work in
 I've made the mistake of working on it for weeks, adding new features, only to realise later, once deployed, that it doesn't work.
 **Lesson learned.**
 
-##Preview
+## Preview
+
 **Share highlights:**
 ![](./feed.png)
 **Retrieve your books and highlights**
